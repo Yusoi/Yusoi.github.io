@@ -7,35 +7,196 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    
     <style>
         body {
-            font-family: 'Lato', sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 5px;
+            -webkit-user-select: none; /* Safari */        
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE10+/Edge */
+            user-select: none; /* Standard */
         }
 
-        bold-h {
-            font-family: 'Lato', sans-serif;
-            font-weight: bolder;
+        a{text-decoration: none;}
+
+        i {
+            font-size:300%;
+            margin-left:5px;
+            margin-right:5px;
         }
+
+        ul {
+            opacity: 0.9;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position:fixed;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 18px 20px;
+            text-decoration: none;
+        }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #111;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        li a:visited {
+            background-color: #111;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        li a:active {
+            background-color: #111;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .bold{
+            font-weight:bolder;
+        }
+
+        .thin{
+            font-weight: 200;
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        .center {
+            margin: auto;
+            padding: 5vh;
+            display: flex;
+            justify-content: center; /* align horizontal */
+            align-items: center; /* align vertical */
+        }
+
+        .hori-margin {
+            margin-left:5px;
+            margin-right:5px;
+        }
+
+        .center-box {
+            margin: auto;
+            padding: 5vh;
+            display: flex;
+            justify-content: center; /* align horizontal */
+            align-items: center; /* align vertical */
+        }
+
+        .maxwidth {
+            width: 100%;
+        }
+
+        .header{
+            font-family: 'Rubik Mono One', sans-serif;
+            font-size: 60px;
+            letter-spacing: 10px;
+        }
+
+        .footer{
+            height: 40vh;
+        }
+
+        .box{
+            height: 80vh;
+        }
+
+        .margin {
+            margin: 3vh;
+        }
+
+        .hoverOpacity {
+            opacity: 1;
+            transition: opacity 0.5s;
+        }
+
+        .hoverOpacity:hover{
+            opacity: 0.5;
+        }
+
+        .div-1 {
+            height: 60vh;
+        }
+
+        .bg-1 {
+            background-color: #42f4c8;
+        }
+
+
+        .bg-2{
+            background-color: #4286f4;
+        }
+
+        .bg-3{
+            background-color: #fff6ed;
+        }
+
     </style>
+
 </head>
 
 <body>
 
-<nav class = "navbar navbar-inverse navbar-fixed-top">
-    <div class = "container-fluid">
-        <ul class = "nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
-        </ul>
-    </div>
-</nav>
+<ul>
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#Information">Personal Information</a></li>
+    <li><a href="#Langs">Proficient Languages</a></li>
+    <li><a href="#">Page 3</a></li>
+</ul>
 
-<div class="container-fluid" style="margin-top:50px">
-  <h1 class="bold-h">Bernardo Manuel Ribeiro Marques Soares Silva</h1>
-  <p>This is some text.</p> 
+<div id="Home" class="centered bg-2 div-1 header" style="width: 100%;">
+    <div class="container-fluid centered div-1 header center">
+        <h1 class="margin header" style="margin: auto; color: white">Curriculum Vitae</h1>
+    </div>
+</div>
+
+<div id="Information" class="centered bg-1 box center-box" style="width: 100%;">
+    <div> 
+        <h1 class="margin maxwidth thin">Bernardo Manuel Ribeiro Marques Soares Silva</h1>
+        <h4 class = "margin maxwidth thin">Avenida de Casaldelo, 2036, lote 6, São João da Madeira, Portugal</h4> 
+        <h4 class = "margin maxwidth thin">Zip Code: 3600-079</h4>
+    </div>
+</div>
+
+<div id="Langs" class="centered bg-3 box center-box" style="width: 100%;">
+    <div>
+        <h1 class="margin maxwidth thin">Proficient Languages</h1>
+        <div style="float:none; text-align: center;">
+            <i class="devicon-rails-plain hoverOpacity"></i>
+            <i class="devicon-bootstrap-plain hoverOpacity"></i>
+            <i class="devicon-c-plain hoverOpacity"></i>
+            <i class="devicon-javascript-plain hoverOpacity"></i>
+            <i class="devicon-git-plain hoverOpacity"></i>
+            <i class="devicon-java-plain hoverOpacity"></i>
+            <i class="devicon-nodejs-plain hoverOpacity"></i>
+            <i class="devicon-ruby-plain hoverOpacity"></i>
+            <i class="devicon-html5-plain hoverOpacity"></i>
+            <i class="devicon-css3-plain-wordmark hoverOpacity"></i>
+        </div>
+    </div>
 </div>
 
 </body>
