@@ -12,6 +12,20 @@
     
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     
+    <script>
+        $(document).ready(function(){
+            $('a[href^="#"]').click(function(e) {
+                e.preventDefault();
+                var target = this.hash, $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function() {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
+
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -125,7 +139,8 @@
         }
 
         .margin {
-            margin: 3vh;
+            margin-bottom: 3vh;
+            margin-top:3vh;
         }
 
         .hoverOpacity {
@@ -137,6 +152,12 @@
             opacity: 0.5;
         }
 
+        .icon-container{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
         .div-1 {
             height: 60vh;
         }
@@ -144,7 +165,6 @@
         .bg-1 {
             background-color: #42f4c8;
         }
-
 
         .bg-2{
             background-color: #4286f4;
@@ -175,26 +195,28 @@
 
 <div id="Information" class="centered bg-1 box center-box" style="width: 100%;">
     <div> 
+        <h1 style="margin-bottom:10vh">Personal Information</h1>
         <h1 class="margin maxwidth thin">Bernardo Manuel Ribeiro Marques Soares Silva</h1>
-        <h4 class = "margin maxwidth thin">Avenida de Casaldelo, 2036, lote 6, São João da Madeira, Portugal</h4> 
+        <h4 class = "margin maxwidth thin">Address: Avenida de Casaldelo, 2036, lote 6, São João da Madeira, Portugal</h4> 
         <h4 class = "margin maxwidth thin">Zip Code: 3600-079</h4>
     </div>
 </div>
 
 <div id="Langs" class="centered bg-3 box center-box" style="width: 100%;">
     <div>
-        <h1 class="margin maxwidth thin">Proficient Languages</h1>
-        <div style="float:none; text-align: center;">
-            <i class="devicon-rails-plain hoverOpacity"></i>
-            <i class="devicon-bootstrap-plain hoverOpacity"></i>
-            <i class="devicon-c-plain hoverOpacity"></i>
-            <i class="devicon-javascript-plain hoverOpacity"></i>
-            <i class="devicon-git-plain hoverOpacity"></i>
-            <i class="devicon-java-plain hoverOpacity"></i>
-            <i class="devicon-nodejs-plain hoverOpacity"></i>
-            <i class="devicon-ruby-plain hoverOpacity"></i>
-            <i class="devicon-html5-plain hoverOpacity"></i>
-            <i class="devicon-css3-plain-wordmark hoverOpacity"></i>
+        <h1 class="margin maxwidth thin" style="margin-bottom: 6vh">Proficient Languages</h1>
+        <div class= "margin" style="display:table">
+            <div class="icon-container">
+                <i class="devicon-rails-plain hoverOpacity"></i>
+                <i class="devicon-bootstrap-plain hoverOpacity"></i>
+                <i class="devicon-c-plain hoverOpacity"></i>
+                <i class="devicon-javascript-plain hoverOpacity"></i>
+                <i class="devicon-git-plain hoverOpacity"></i>
+                <i class="devicon-java-plain hoverOpacity"></i>
+                <i class="devicon-nodejs-plain hoverOpacity"></i>
+                <i class="devicon-ruby-plain hoverOpacity"></i>
+                <i class="devicon-html5-plain hoverOpacity"></i>
+                <i class="devicon-css3-plain-wordmark hoverOpacity"></i>
         </div>
     </div>
 </div>
