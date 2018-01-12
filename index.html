@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -28,6 +29,8 @@
 
     <style>
         body {
+            /*font-family: 'Fredoka One', cursive;*/
+
             font-family: 'Montserrat', sans-serif;
             letter-spacing: 5px;
             -webkit-user-select: none; /* Safari */        
@@ -135,7 +138,7 @@
         }
 
         .box{
-            height: 80vh;
+            height: 100vh;
         }
 
         .margin {
@@ -174,6 +177,15 @@
             background-color: #fff6ed;
         }
 
+        .bg-4{
+            background-color: #e6e6ff
+;
+        }
+
+        .bg-5{
+            background-color: #333333;
+            color: #ffffff;
+        }
     </style>
 
 </head>
@@ -185,6 +197,7 @@
     <li><a href="#Information">Personal Information</a></li>
     <li><a href="#Langs">Proficient Languages</a></li>
     <li><a href="#Scholarship">Scholarship</a></li>
+    <li><a href="#Contacts">Contact Me</a></li>
 </ul>
 
 <div id="Home" class="centered bg-2 div-1 header" style="width: 100%;">
@@ -195,7 +208,7 @@
 
 <div id="Information" class="centered bg-1 box center-box" style="width: 100%;">
     <div> 
-        <h1 style="margin-bottom:10vh">Personal Information</h1>
+        <h1 style="margin-bottom:10vh; font-weight:600">Personal Information</h1>
         <h1 class="margin maxwidth thin">Bernardo Manuel Ribeiro Marques Soares Silva</h1>
         <h4 class = "margin maxwidth thin">Address: Avenida de Casaldelo, 2036, lote 6, São João da Madeira, Portugal</h4> 
         <h4 class = "margin maxwidth thin">Zip Code: 3600-079</h4>
@@ -204,7 +217,7 @@
 
 <div id="Langs" class="centered bg-3 box center-box" style="width: 100%;">
     <div>
-        <h1 class="margin maxwidth thin" style="margin-bottom: 6vh">Proficient Languages</h1>
+        <h1 class="margin maxwidth thin" style="margin-bottom: 6vh; font-weight:600;">Proficient Languages</h1>
         <div class= "margin" style="display:table">
             <div class="icon-container">
                 <i class="devicon-rails-plain hoverOpacity"></i>
@@ -217,28 +230,30 @@
                 <i class="devicon-ruby-plain hoverOpacity"></i>
                 <i class="devicon-html5-plain hoverOpacity"></i>
                 <i class="devicon-css3-plain-wordmark hoverOpacity"></i>
+            </div>
         </div>
     </div>
 </div>
 
-<div id="Scholarship" class="centered bg-3 box center-box" style="width: 100%;">
+<div id="Scholarship" class="centered bg-4 box center-box" style="width: 100%;">
     <div>
-        <h1 class="margin maxwidth thin" style="margin-bottom: 6vh">Proficient Languages</h1>
-        <div class= "margin" style="display:table">
-            <div class="icon-container">
-                <i class="devicon-rails-plain hoverOpacity"></i>
-                <i class="devicon-bootstrap-plain hoverOpacity"></i>
-                <i class="devicon-c-plain hoverOpacity"></i>
-                <i class="devicon-javascript-plain hoverOpacity"></i>
-                <i class="devicon-git-plain hoverOpacity"></i>
-                <i class="devicon-java-plain hoverOpacity"></i>
-                <i class="devicon-nodejs-plain hoverOpacity"></i>
-                <i class="devicon-ruby-plain hoverOpacity"></i>
-                <i class="devicon-html5-plain hoverOpacity"></i>
-                <i class="devicon-css3-plain-wordmark hoverOpacity"></i>
-        </div>
+        <h1 class="margin maxwidth thin" style="margin-bottom: 6vh; font-weight:600;">Scholarship and Experience</h1>
+
+        <h4 class = "margin maxwidth thin">Currently studying Computer Science at University of Minho</h4>
+        <h4 class = "margin maxwidth thin">Experience in Web Development</h4>
+        <h4 class = "margin maxwidth thin">Participation in a HeartBits Hackathon developing both front and back-end</h4>
+        <h4 class = "margin maxwidth thin">Developed projects in C, Haskell and Java</h4>
     </div>
 </div>
+
+<div id="Contacts" class="centered bg-5 box center-box" style="width: 100%;">
+    <div>
+        <h1 class="margin maxwidth thin" style="margin-bottom: 6vh; font-weight:600;">Contacts</h1>
+
+        <h4 class = "margin maxwidth thin">Business Email: bernardosilva.business@gmail.com </h4>
+    </div>
+</div>
+
 
 </body>
 </html>
